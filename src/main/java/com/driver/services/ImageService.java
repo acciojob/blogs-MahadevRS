@@ -51,7 +51,7 @@ public class ImageService {
         for(int i=0;i<imagedimension.length();i++){
             char c=imagedimension.charAt(0);
             if(c!='X'){
-                imgxs+="c";
+                imgxs+=c;
             }
             else{
                 imgys=imagedimension.substring(i+1,imagedimension.length());
@@ -62,7 +62,7 @@ public class ImageService {
         for(int i=0;i<screenDimensions.length();i++){
             char c=screenDimensions.charAt(0);
             if(c!='X'){
-                screenxs+="c";
+                screenxs+=c;
             }
             else{
                 screenys=imagedimension.substring(i+1,screenDimensions.length());
