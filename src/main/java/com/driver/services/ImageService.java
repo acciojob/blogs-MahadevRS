@@ -75,7 +75,12 @@ public class ImageService {
         screenx=Integer.parseInt(screenxs);
         screeny=Integer.parseInt(screenys);
 
-        count=(screenx*screeny)/(imgx*imgy);
+
+        //count=(screenx*screeny)/(imgx*imgy);
+
+        count+=screenx/imgx;
+        count+=screeny/imgy;
+
 
         return count;
     }
